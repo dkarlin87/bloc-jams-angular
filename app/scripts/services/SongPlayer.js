@@ -27,7 +27,11 @@
  
     currentSong = song;
  };
-         
+         /**
+ * @function PlaySong
+ * @desc Plays selected audio file as currentBuzzObject
+ * @param {Object} song
+ */    
          
         SongPlayer.play = function(song) {
      if (currentSong !== song) {
@@ -39,6 +43,12 @@ currentBuzzObject.play();
                  
         }
      };
+       
+              /**
+ * @function Pause
+ * @desc Pauses the currently selected audio file.
+ * @param {Object} song
+ */    
          
       SongPlayer.pause = function(song) {
      currentBuzzObject.pause();
